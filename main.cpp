@@ -1,29 +1,3 @@
-/*
-2.	La Municipalidad de Chiclayo desea que usted elabore un programa que
-permita llevar el control de las infracciones de tránsito siendo los datos
-a registrar:
--Placa del auto (5 dígitos alfanuméricos)
--Número de la papeleta (9 dígitos alfanuméricos)
--Año de la infracción
--Tipo de infracción (considere: sobrepasar límites de velocidad, pasar una luz roja,
-no respetar las señales de tránsito, conducir en estado etílico,conducir sin
-licencia)
--Deuda total
--Nombre del infractor
--Estado (pendiente o cancelado)
-
-Realizar:
-
-a.	Registrar una nueva infracción de tránsito.
-b.	Realizar el pago de las infracciones de tránsito. 
-c.	Mostrar el número de infracciones por tipo que ocurrieron en el año 2018.
-d.	Mostrar ordenado ascendente por placa del auto.
-e.	Dado el nombre del infractor mostrar que infracciones aun con deuda tiene
-y cuál es su promedio de deuda.
-f.	Quién es el infractor que registra la mayor deuda aun no cancelada.
-g.	Mostrar el número de infracciones pendientes y canceladas cuya deuda
-supere un valor ingresado.*/
-
 #include "basicas.cpp"
 #define MAXPLACA 6
 #define MAXPAPELETA 10
@@ -39,7 +13,7 @@ struct Infraccion
  char nombre[LIM];
  int estado;
 };
-char TTipoinfraccion[MAXTIPO][LIM]={"Sobrepasar limites de velocidad", "Pasar una luz roja", "No respetar las señales de transito", "Conducir en estado etilico", "Conducir sin licencia"};
+char TTipoinfraccion[MAXTIPO][LIM]={"Sobrepasar limites de velocidad", "Pasar una luz roja", "No respetar las seÃ±ales de transito", "Conducir en estado etilico", "Conducir sin licencia"};
 char TEstado[MAXESTADO][LIM]={"Pendiente", "Cancelado"};
 //operaciones basicas para infraccion
 void iniciainfraccion(Infraccion &I)
